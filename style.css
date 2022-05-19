@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  color: white;
+  background-color: black;
+}
+.homebar {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homebar .logo {
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.homebar .logo i {
+  color: red;
+}
+
+.homebar .navbar {
+  margin-right: 50px;
+}
+.homebar .navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+.homebar .navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+.homebar .navbar ul li a:hover {
+  text-decoration: underline;
+}
+.homebar .navbar ul li a:active {
+  color: red;
+}
+.homebar .bar {
+  display: none;
+}
+.showcase {
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.showcase .left h1 {
+  font-weight: 600;
+  font-size: 35px;
+}
+.showcase .left h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: red;
+  font-style: 30px;
+}
+.showcase button {
+  margin-top: 30px;
+  border-radius: 0px 0px 10px 0px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+.showcase button:active {
+  color: red;
+}
+.showcase .right img {
+  height: 350px;
+  width: 400px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  color: red;
+  width: 100vw;
+  height: 30px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+}
+.menubar {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .homebar .logo {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: green;
+  }
+  .homebar .navbar {
+    display: none;
+  }
+  .homebar .bar {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .showcase {
+    padding: 20px 10px;
+    display: block;
+  }
+  .showcase .left h1 {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .showcase .left h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: red;
+    font-size: 16px;
+  }
+  .showcase button {
+    margin-top: 30px;
+    border-radius: 0px 0px 10px 0px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 4px 8px;
+    font-weight: bold;
+  }
+  .showcase button:active {
+    color: red;
+  }
+  .showcase .right img {
+    height: 300px;
+    width: 275px;
+  }
+  .menubar {
+    display: none;
+  }
+  .design {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50%;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+  }
+  .menubar .cancel {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .menubar .cancel:active {
+    color: red;
+  }
+  .menubar ul li {
+    list-style: none;
+  }
+  .menubar ul li a {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  .menubar ul li:hover {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 720px) {
+  .homebar .logo {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: blue;
+  }
+  .showcase {
+    padding: 20px 10px;
+    display: block;
+  }
+  .showcase .left h1 {
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .showcase .left h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: red;
+  }
+  .showcase button {
+    margin-top: 30px;
+    border-radius: 0px 0px 10px 0px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 4px 8px;
+    font-weight: bold;
+  }
+  .showcase button:active {
+    color: red;
+  }
+  .showcase .right img {
+    height: 300px;
+    width: 700px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    color: red;
+    width: 100vw;
+    height: 30px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+  }
+}
