@@ -4,223 +4,354 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-body {
-  color: white;
-  background-color: black;
-}
 .homebar {
-  margin-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 50px;
 }
 .homebar .logo {
-  margin-left: 50px;
-  font-size: 30px;
-  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .homebar .logo i {
-  color: red;
+  font-size: 30px;
 }
-
 .homebar .navbar {
-  margin-right: 50px;
-}
-.homebar .navbar ul li {
-  list-style: none;
   display: inline-block;
-  margin-left: 30px;
 }
-.homebar .navbar ul li a {
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-left: 40px;
+  line-height: 2px;
+}
+.navbar ul li .duo {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.navbar ul li a {
   text-decoration: none;
+  color: black;
   font-size: 20px;
-  color: white;
-  font-weight: 400;
 }
-.homebar .navbar ul li a:hover {
+.navbar ul li a:hover {
+  color: blue;
   text-decoration: underline;
 }
-.homebar .navbar ul li a:active {
-  color: red;
+.access-bar {
+  margin-right: 10px;
+}
+.access-bar li {
+  display: inline-block;
+  margin-left: 40px;
+  list-style: none;
+}
+.access-bar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.access-bar .sign {
+  padding: 6px 10px;
+  background-color: blue;
+  color: white;
 }
 .homebar .bar {
+  transform: rotate(-90deg);
   display: none;
 }
 .showcase {
-  padding: 20px 60px;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 5px 100px;
 }
 .showcase .left h1 {
-  font-weight: 600;
-  font-size: 35px;
+  margin-bottom: 5px;
+  color: rgb(4, 4, 36);
+  font-size: 50px;
 }
-.showcase .left h2 {
-  margin-top: 5px;
+.showcase .left .p-s {
+  margin-top: 10px;
   margin-bottom: 20px;
-  font-style: italic;
-  color: red;
-  font-style: 30px;
 }
-.showcase button {
-  margin-top: 30px;
-  border-radius: 0px 0px 10px 0px;
+.showcase .left .buttons {
+  display: flex;
+}
+.showcase .left .button1 {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 15px;
+}
+.showcase .left .button2 {
+  background-color: rgb(4, 4, 36);
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  padding: 4px 12px;
+}
+.showcase .left .button2 i {
+  padding: 15px;
   background-color: white;
-  color: black;
-  font-size: 25px;
-  padding: 4px 8px;
-  font-weight: bold;
-}
-.showcase button:active {
-  color: red;
+  color: blue;
+  border-radius: 50%;
+  margin-right: 6px;
 }
 .showcase .right img {
+  width: 500px;
   height: 350px;
-  width: 400px;
 }
-footer {
+.imgbox {
+  height: 475px;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-top: 50px;
+  margin-top: 80px;
+}
+.imgbox img {
+  height: 350px;
+  width: 525px;
+}
+.bluebox {
+  background-color: rgb(4, 4, 36);
+  width: 55%;
+  height: 500px;
+  padding: 20px 40px;
   position: absolute;
-  bottom: 0;
-  background-color: white;
-  color: red;
+  left: 0;
+  top: 70%;
+}
+.bluebox .topper {
+  display: flex;
+  margin-bottom: 20px;
+}
+.bluebox .topper h1 {
+  color: white;
+}
+.bluebox .topper .linedgn {
+  margin-left: 5px;
+  margin-top: 20px;
+  border-top: 2px lightblue solid;
+  width: 150px;
+}
+.bluebox .classes {
+  display: flex;
+  margin-top: 40px;
+}
+.bluebox .classes .icon {
+  background-color: blue;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bluebox .classes .icon i {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.bluebox .classes .words {
+  margin-left: 50px;
+}
+.bluebox .classes .words h2 {
+  margin-bottom: 4px;
+  color: white;
+  font-weight: bold;
+}
+.bluebox .classes .words p {
+  margin-top: 12px;
+  color: rgb(235, 228, 228);
+}
+.menu {
+  height: 667px;
   width: 100vw;
-  height: 30px;
-  display: grid;
-  font-size: 20px;
-  place-items: center;
+  background-color: rgb(4, 4, 36);
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
 }
-.menubar {
-  display: none;
+.menudgn {
+  visibility: visible;
 }
-
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.menu ul li a:active {
+  color: red;
+}
+.menu ul div {
+  position: absolute;
+  top: 2px;
+  right: 20px;
+}
+.menu ul div i {
+  font-size: 30px;
+  color: red;
+}
+.menu ul .firstli {
+  margin-top: 30px;
+}
 @media only screen and (max-width: 375px) {
-  .homebar .logo {
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: 400;
-    color: green;
+  .homebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+  }
+  .homebar .bar {
+    display: block;
   }
   .homebar .navbar {
     display: none;
   }
-  .homebar .bar {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  .showcase {
-    padding: 20px 10px;
-    display: block;
-  }
-  .showcase .left h1 {
-    font-weight: 400;
-    margin-top: 10px;
-    font-size: 20px;
-  }
-  .showcase .left h2 {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-style: italic;
-    color: red;
-    font-size: 16px;
-  }
-  .showcase button {
-    margin-top: 30px;
-    border-radius: 0px 0px 10px 0px;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    padding: 4px 8px;
-    font-weight: bold;
-  }
-  .showcase button:active {
-    color: red;
-  }
-  .showcase .right img {
-    height: 300px;
-    width: 275px;
-  }
-  .menubar {
+  .homebar .access-bar {
     display: none;
   }
-  .design {
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 50%;
-    font-size: 20px;
-    background-color: white;
-    color: black;
-  }
-  .menubar .cancel {
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-  }
-  .menubar .cancel:active {
-    color: red;
-  }
-  .menubar ul li {
-    list-style: none;
-  }
-  .menubar ul li a {
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-    padding: 10px 20px;
-  }
-  .menubar ul li:hover {
-    background-color: red;
-  }
-}
-
-@media only screen and (min-width: 376px) and (max-width: 720px) {
-  .homebar .logo {
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: 400;
-    color: blue;
-  }
   .showcase {
-    padding: 20px 10px;
+    padding: 10px 20px;
     display: block;
   }
   .showcase .left h1 {
-    font-weight: 400;
+    margin-bottom: 5px;
+    color: rgb(4, 4, 36);
+    font-size: 30px;
+  }
+  .showcase .left .p-s {
     margin-top: 10px;
-  }
-  .showcase .left h2 {
-    margin-top: 5px;
     margin-bottom: 20px;
-    font-style: italic;
-    color: red;
   }
-  .showcase button {
-    margin-top: 30px;
-    border-radius: 0px 0px 10px 0px;
+  .showcase .left .p-s p {
+    font-size: 14px;
+  }
+  .showcase .left .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .showcase .left .button1 {
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 3px 20px;
+  }
+  .showcase .left .button2 {
+    background-color: rgb(4, 4, 36);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 3px 20px;
+  }
+  .showcase .left .button2 i {
+    padding: 10px;
     background-color: white;
-    color: black;
-    font-size: 20px;
-    padding: 4px 8px;
-    font-weight: bold;
+    color: blue;
+    border-radius: 50%;
+    margin-right: 6px;
   }
-  .showcase button:active {
-    color: red;
+  .showcase .right {
+    margin-top: 5px;
   }
   .showcase .right img {
-    height: 300px;
-    width: 700px;
+    width: 335px;
+    height: 370px;
   }
-  footer {
-    position: fixed;
-    bottom: 0;
-    background-color: white;
-    color: red;
-    width: 100vw;
-    height: 30px;
-    display: grid;
-    font-size: 20px;
-    place-items: center;
+  .bluebox {
+    background-color: rgb(4, 4, 36);
+    width: 98%;
+    height: 500px;
+    padding: 8px 10px;
+    position: absolute;
+    left: 0;
+    top: 650px;
+  }
+  .bluebox .topper {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .bluebox .topper h1 {
+    color: white;
+  }
+  .bluebox .topper .linedgn {
+    margin-left: 5px;
+    margin-top: 20px;
+    border-top: 2px lightblue solid;
+    width: 100px;
+  }
+  .bluebox .classes {
+    display: flex;
+    margin-top: 20px;
+  }
+  .bluebox .classes .icon {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bluebox .classes .icon i {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .bluebox .classes .words {
+    margin-left: 5px;
+  }
+  .bluebox .classes .words h2 {
+    margin-bottom: 4px;
+    color: white;
+    font-weight: bold;
+  }
+  .bluebox .classes .words p {
+    margin-top: 8px;
+    color: rgb(235, 228, 228);
+  }
+  .imgbox {
+    box-sizing: content-box;
+    width: 375px;
+    background-color: lightblue;
+    padding-top: 490px;
+    padding-right: 1px;
+    margin-top: 80px;
+  }
+  .imgbox img {
+    height: 400px;
+    width: 370px;
   }
 }
